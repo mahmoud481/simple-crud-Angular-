@@ -1,0 +1,14 @@
+<h1>Simple Crud</h1>
+<div class="row">
+    <div  class="col-md-4">
+        <app-add-todo (addEvent) = 'addTodo($event)'></app-add-todo> 
+    </div>
+    <div class = "col-md-8">
+        <app-todo *ngFor="let item of todos"
+        (toggleEvent)='toggleTodo($event)'
+        (deleteEvent) = 'deleteTodo($event)'
+         [todo] = 'item'>
+        </app-todo>
+    </div>
+   
+</div>

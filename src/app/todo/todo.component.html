@@ -1,0 +1,12 @@
+<div  >
+    <div class="row">
+    
+        <div class="col-md-10 todo-item " [ngClass]='{"completed": todo.completed} '>
+            <input type="checkbox" [checked]='todo.completed' (change)= "onChange(todo)">
+            {{todo.title}}
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-danger" (click)='ondelete(todo)'>Delete </button>
+        </div>
+    </div>
+</div>

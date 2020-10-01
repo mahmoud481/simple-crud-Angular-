@@ -1,0 +1,16 @@
+.todo-item{
+    background-color: #ccc;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.completed{
+    background-color: rgb(7, 241, 151);
+    text-decoration: line-through;
+}
+button
+{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
